@@ -10,7 +10,7 @@
 4. Have tabs and easily switch between them DONE
 5. Be able to use window splits both on the same file and two different files, be able to use buffers TODO
 
-####Coding:
+#### Coding:
 1. autocomplete on a tab hit KINDA DONE
 2. I want to know which lines I've changed DONE
 3. I want the ability to search for a specific piece of text and replace all instances of it
