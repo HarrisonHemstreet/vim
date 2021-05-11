@@ -1,6 +1,7 @@
 # VIM NOTES
 ## VIM COMMANDS I LIKE:
 1. `:%s/[to replace]/[to replace with]` Search through current file and replace all instances with something else
+2. hover over any word and hit `SHIFT + 8`
 
 ### Things I want my Vim to do:
 #### Navigating:
