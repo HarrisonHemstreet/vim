@@ -5,10 +5,11 @@
 
 ### Things I want my Vim to do:
 #### Navigating:
-1. file tree DONE
-2. search by file name quick and easy DONE
-3. search for text within files/directories DONE
-4. Have tabs and easily switch between them DONE
+1. file tree DONE `CTL + n`
+2. search by file name quick and easy DONE `CTL + p` using the fzf plugin
+a. https://www.youtube.com/watch?v=on1AzaZzQ7k&t=549s
+3. search for text within files/directories DONE `:Rg` also checkout using `:Blines` for searching through the lines of the current buffer, or `:lines` for searching through all open buffers
+4. Have tabs and easily switch between them DONE 
 5. Be able to use window splits both on the same file and two different files, be able to use buffers TODO
 
 #### Coding:

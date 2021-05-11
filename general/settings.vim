@@ -40,6 +40,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set scrolloff=16                        " as you scroll down, the cursor will stay 16 lines up fromm the bottom
 set incsearch                           " searches while you type
 set tabpagemax=10                       " only allows 10 tabs to be open at a time. 
+set tags=tags
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 

@@ -25,6 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     " Fuzzy finder helper
     Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-rooter'
     
     "Intellisense and syntax highlighting
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -36,6 +37,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " shows which lines have been changed
     Plug 'airblade/vim-gitgutter'
+
+    Plug 'universal-ctags/ctags'
 
 call plug#end()
 
