@@ -13,12 +13,11 @@ set iskeyword+=-                      	" treat dash separated words as a word te
 set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
-set t_Co=256                           " Support 256 colors
+set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
 
-set tabstop=4                           " Insert 2 spaces for a tab
+set tabstop=4 softtabstop=4             " Insert 2 spaces for a tab
 set shiftwidth=4                        " Change the number of space characters inserted for indentation
-set softtabstop=0
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
@@ -41,6 +40,14 @@ set scrolloff=16                        " as you scroll down, the cursor will st
 set incsearch                           " searches while you type
 set tabpagemax=10                       " only allows 10 tabs to be open at a time. 
 set tags=tags
+set noerrorbells
+set signcolumn=yes                      " adds a column for linting?
+set colorcolumn=80                      " adds a column so I can know how many characters out I've coded
+
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir              " these are about keeping history?
+set undofile
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
