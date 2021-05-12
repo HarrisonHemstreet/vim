@@ -1,15 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
-"    "css",
-"    "html",
-"    "javascript",
-"    "javascriptreact",
-"    "json",
-"    "jsonc",
-"    "python",
-"    "typescript",
-"    "typescriptreact"
-  ],
+  "coc.preferences.formatOnSaveFiletypes": [],
   "coc.preferences.formatOnType": true,
   "powershell.integratedConsole.showOnStartup": false,
   "prettier.arrowParens": "avoid",

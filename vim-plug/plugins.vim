@@ -28,9 +28,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-rooter'
     
     "Intellisense and syntax highlighting
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'leafgarland/typescript-vim'
-    Plug 'peitalin/vim-jsx-typescript'
+"    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"    Plug 'leafgarland/typescript-vim'
+"    Plug 'peitalin/vim-jsx-typescript'
    
     " comment out lines with gcc or in visual mode, gc
     Plug 'tpope/vim-commentary'

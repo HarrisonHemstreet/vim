@@ -15,13 +15,15 @@ set splitbelow                          " Horizontal splits will automatically b
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
+set nohlsearch                          " removed highlighting hopefully after search is done.
 
-set tabstop=4 softtabstop=4             " Insert 2 spaces for a tab
+set tabstop=4                           " Insert 4 spaces for a tab 
+set softtabstop=4                       " Insert 4 spaces for a tab
 set shiftwidth=4                        " Change the number of space characters inserted for indentation
-set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
-set expandtab                           " Converts tabs to spaces
-set smartindent                         " Makes indenting smart
-set autoindent                          " Good auto indent
+" set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
+" set expandtab                           " Converts tabs to spaces
+" set smartindent                         " Makes indenting smart
+" set autoindent                          " Good auto indent
 
 set laststatus=0                        " Always display the status line
 set number                              " Line numbers
@@ -30,8 +32,10 @@ set cursorline                          " Enable highlighting of the current lin
 set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
+
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
+
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
@@ -42,7 +46,7 @@ set tabpagemax=10                       " only allows 10 tabs to be open at a ti
 set tags=tags
 set noerrorbells
 set signcolumn=yes                      " adds a column for linting?
-set colorcolumn=80                      " adds a column so I can know how many characters out I've coded
+set colorcolumn=110                      " adds a column so I can know how many characters out I've coded
 
 set noswapfile
 set nobackup
