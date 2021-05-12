@@ -1,5 +1,20 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "json", "javascriptreact", "typescript.tsx"],
-  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
-  "coc.preferences.diagnostic.virtualText": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+"    "css",
+"    "html",
+"    "javascript",
+"    "javascriptreact",
+"    "json",
+"    "jsonc",
+"    "python",
+"    "typescript",
+"    "typescriptreact"
+  ],
+  "coc.preferences.formatOnType": true,
+  "powershell.integratedConsole.showOnStartup": false,
+  "prettier.arrowParens": "avoid",
+  "prettier.printWidth": 100,
+  "prettier.tabWidth": 4,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all"
 }
