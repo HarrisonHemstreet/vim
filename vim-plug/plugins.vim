@@ -39,6 +39,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'
 
+    " lsp-colors. Fixes gaps between gruvbox and lsp
+    Plug 'folke/lsp-colors.nvim'
+
 
 call plug#end()
 

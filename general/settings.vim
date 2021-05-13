@@ -30,6 +30,7 @@ set number                              " Line numbers
 set relativenumber                      " line numbers show how far away for each I am
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
+
 set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 
@@ -52,6 +53,12 @@ set noswapfile
 set nobackup
 set undodir=~/.vim/undodir              " these are about keeping history?
 set undofile
+
+" protect against crash-during-write
+set writebackup
+" but do not persist backup after successful write
+set nobackup
+set backupcopy=auto
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 

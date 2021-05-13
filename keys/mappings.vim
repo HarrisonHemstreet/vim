@@ -34,23 +34,16 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Better window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <Leader>h <C-w>h
+nnoremap <Leader>j <C-w>j
+nnoremap <Leader>k <C-w>k
+nnoremap <Leader>l <C-w>l
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 
 " ___________________________________________________________________________________________________________
 " Dustin's additions
-
-
-" protect against crash-during-write
-set writebackup
-" but do not persist backup after successful write
-set nobackup
-set backupcopy=auto
 
 " git bindings
 nnoremap <leader>gst :!git status<CR>
@@ -60,3 +53,17 @@ nnoremap <leader>ga :!git add %<CR>
 nnoremap <leader>gl :!git log %<CR>
 nnoremap <leader>gL :!git log -p %<CR>
 nnoremap <leader>gb :!git blame %<CR>
+
+" ___________________________________________________________________________________________________________
+
+nnoremap <leader>nty :tabnew ~/younique<CR>
+nnoremap <leader>ntyc :tabnew ~/younique/comeng<CR>
+nnoremap <leader>ntyd :tabnew ~/younique/danzek<CR>
+nnoremap <leader>ntyj :tabnew ~/younique/jane<CR>
+nnoremap <leader>ntyl :tabnew ~/younique/leela<CR>
+nnoremap <leader>ntyn :tabnew ~/younique/notes<CR>
+nnoremap <leader>ntyp :tabnew ~/younique/product-credits<CR>
+nnoremap <leader>ntyr :tabnew ~/younique/rma<CR>
+nnoremap <leader>ntys :tabnew ~/younique/sansa<CR>
+
+nnoremap <leader>ntnv :tabnew ~/.config/nvim<CR>
