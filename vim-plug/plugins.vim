@@ -27,11 +27,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
     
-    "Intellisense and syntax highlighting
-"    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"    Plug 'leafgarland/typescript-vim'
-"    Plug 'peitalin/vim-jsx-typescript'
-   
     " comment out lines with gcc or in visual mode, gc
     Plug 'tpope/vim-commentary'
 
@@ -40,6 +35,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'universal-ctags/ctags'
 
+    " LSP - locate function definitions
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'hrsh7th/nvim-compe'
+
+
 call plug#end()
 
 
+
+
+lua require'lspconfig'.tsserver.setup{}

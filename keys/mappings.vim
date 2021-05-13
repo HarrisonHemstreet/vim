@@ -41,3 +41,22 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
+
+" ___________________________________________________________________________________________________________
+" Dustin's additions
+
+
+" protect against crash-during-write
+set writebackup
+" but do not persist backup after successful write
+set nobackup
+set backupcopy=auto
+
+" git bindings
+nnoremap <leader>gst :!git status<CR>
+nnoremap <leader>gd :!git diff %<CR>
+nnoremap <leader>gD :!git diff --cached %<CR>
+nnoremap <leader>ga :!git add %<CR>
+nnoremap <leader>gl :!git log %<CR>
+nnoremap <leader>gL :!git log -p %<CR>
+nnoremap <leader>gb :!git blame %<CR>
