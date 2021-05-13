@@ -17,7 +17,13 @@ let g:gruvbox_invert_selections='0'
 colorscheme gruvbox
 set background=dark
 
+" lua require'nvim_lsp'.tsserver.setup{ on_attach=require'completion'.on_attach }
+
 lua << EOF
+-- TROUBLE PLUGIN:
+require('trouble').setup {}
+
+-- END OF TROUBLE PLUGIN
 local nvim_lsp = require('lspconfig')
 local on_attach = function(client, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
@@ -69,8 +75,10 @@ end
 
 -- Use a loop to conveniently both setup defined servers 
 -- and map buffer local keybindings when the language server attaches
-local servers = { "tsserver", "intelephense", "pyright", "rust_analyzer" }
+local servers = { "tsserver", "intelephense", "pyright" }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { on_attach = on_attach }
 end
+
+
 EOF

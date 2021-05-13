@@ -19,6 +19,18 @@ nnoremap <c-u> viwU<Esc>
 nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
+nnoremap th :tabfirst<CR>
+nnoremap tj :tabnext<CR>
+nnoremap tk :tabprev<CR>
+nnoremap tl :tablast<CR>
+nnoremap tt :tabedit<Space>
+nnoremap tn :tabnext<Space>
+nnoremap tm :tabm<Space>
+nnoremap td :tabclose<CR>
+" Alternatively use
+"nnoremap th :tabnext<CR>
+"nnoremap tl :tabprev<CR>
+"nnoremap tn :tabnew<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
@@ -56,14 +68,23 @@ nnoremap <leader>gb :!git blame %<CR>
 
 " ___________________________________________________________________________________________________________
 
-nnoremap <leader>nty :tabnew ~/younique<CR>
-nnoremap <leader>ntyc :tabnew ~/younique/comeng<CR>
-nnoremap <leader>ntyd :tabnew ~/younique/danzek<CR>
-nnoremap <leader>ntyj :tabnew ~/younique/jane<CR>
-nnoremap <leader>ntyl :tabnew ~/younique/leela<CR>
-nnoremap <leader>ntyn :tabnew ~/younique/notes<CR>
-nnoremap <leader>ntyp :tabnew ~/younique/product-credits<CR>
-nnoremap <leader>ntyr :tabnew ~/younique/rma<CR>
-nnoremap <leader>ntys :tabnew ~/younique/sansa<CR>
+nnoremap <leader>ny :tabnew ~/younique<CR>
+nnoremap <leader>nc :tabnew ~/younique/comeng<CR>
+nnoremap <leader>nd :tabnew ~/younique/danzek<CR>
+nnoremap <leader>nj :tabnew ~/younique/jane<CR>
+nnoremap <leader>nl :tabnew ~/younique/leela<CR>
+nnoremap <leader>nn :tabnew ~/younique/notes<CR>
+nnoremap <leader>np :tabnew ~/younique/product-credits<CR>
+nnoremap <leader>nr :tabnew ~/younique/rma<CR>
+nnoremap <leader>ns :tabnew ~/younique/sansa<CR>
 
-nnoremap <leader>ntnv :tabnew ~/.config/nvim<CR>
+nnoremap <leader>nv :tabnew ~/.config/nvim<CR>
+
+" ____________________________________________________
+" For Trouble Plugin
+nnoremap <leader>xx <cmd>TroubleToggle<cr>
+nnoremap <leader>xw <cmd>TroubleToggle lsp_workspace_diagnostics<cr>
+nnoremap <leader>xd <cmd>TroubleToggle lsp_document_diagnostics<cr>
+nnoremap <leader>xq <cmd>TroubleToggle quickfix<cr>
+nnoremap <leader>xl <cmd>TroubleToggle loclist<cr>
+" nremap gR <cmd>TroubleToggle lsp_references<cr>

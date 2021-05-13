@@ -38,6 +38,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " LSP - locate function definitions
     Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'
+    Plug 'alexaandru/nvim-lspupdate'
+    Plug 'nvim-lua/completion-nvim'
+    Plug 'glepnir/lspsaga.nvim'
+    Plug 'folke/trouble.nvim'
+    Plug 'kyazdani42/nvim-web-devicons'
 
     " lsp-colors. Fixes gaps between gruvbox and lsp
     Plug 'folke/lsp-colors.nvim'
