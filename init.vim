@@ -22,6 +22,7 @@ set background=dark
 lua << EOF
 -- TROUBLE PLUGIN:
 require('trouble').setup {}
+
 vim.api.nvim_set_keymap("n", "<leader>xx", "<cmd>Trouble<cr>",
   {silent = true, noremap = true}
 )
@@ -36,6 +37,7 @@ vim.api.nvim_set_keymap("n", "<leader>xl", "<cmd>Trouble loclist<cr>",
 )
 vim.api.nvim_set_keymap("n", "<leader>xq", "<cmd>Trouble quickfix<cr>",
   {silent = true, noremap = true}
+)
 
 -- END OF TROUBLE PLUGIN
 local nvim_lsp = require('lspconfig')
