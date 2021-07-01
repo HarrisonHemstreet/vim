@@ -7,3 +7,14 @@ nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+
+lua << EOF
+
+lspconfig = require'lspconfig'
+completion_callback = require'completion'.on_attach
+
+lspconfig.pyls.setup{on_attach=completion_callback}
+lspconfig.tsserver.setup{on_attach=completion_callback}
+lspconfig.rust_analyzer.setup{on_attach=completion_callback}
+
+EOF

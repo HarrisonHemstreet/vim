@@ -59,8 +59,8 @@ nnoremap <Leader>O O<Esc>^Da
 
 " git bindings
 nnoremap <leader>gst :!git status<CR>
-nnoremap <leader>gd :!git diff %<CR>
-nnoremap <leader>gD :!git diff --cached %<CR>
+" nnoremap <leader>gd :!git diff %<CR>
+" nnoremap <leader>gD :!git diff --cached %<CR>
 nnoremap <leader>ga :!git add %<CR>
 nnoremap <leader>gl :!git log %<CR>
 nnoremap <leader>gL :!git log -p %<CR>
@@ -88,3 +88,12 @@ nnoremap <leader>xd <cmd>TroubleToggle lsp_document_diagnostics<cr>
 nnoremap <leader>xq <cmd>TroubleToggle quickfix<cr>
 nnoremap <leader>xl <cmd>TroubleToggle loclist<cr>
 " nremap gR <cmd>TroubleToggle lsp_references<cr>
+
+" ________________________
+" For autocomplete using the lsp
+" Use <Tab> and <S-Tab> to navigate through popup menu
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+let g:completion_enable_auto_popup = 0
+imap <tab> <Plug>(completion_smart_tab)
+imap <s-tab> <Plug>(completion_smart_s_tab)

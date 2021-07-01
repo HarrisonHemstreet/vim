@@ -8,6 +8,12 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    " autocomplete using the lsp
+    Plug 'nvim-lua/completion-nvim'
+
+    " for GoLang setup
+    Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
 
@@ -17,7 +23,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'ryanoasis/vim-devicons'
 
     " Auto pairs for '(' '[' '{'
-    " Plug 'jiangmiao/auto-pairs'
+    Plug 'jiangmiao/auto-pairs'
     " Color Scheme Gruvbox
     Plug 'morhetz/gruvbox'
     
